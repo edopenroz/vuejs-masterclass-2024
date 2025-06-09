@@ -20,9 +20,10 @@ export default defineConfigWithVueTs(
   pluginVue.configs['flat/strongly-recommended'],
   vueTsConfigs.recommended,
   skipFormatting,
-  // {
-  //   "rules": {
-  //     "@typescript-eslint/no-unused-vars": 0
-  //   }
-  // }
+  {
+    rules: {
+      // "@typescript-eslint/no-unused-vars": 0
+      'vue/multi-word-component-names': 0,
+    },
+  },
 )
